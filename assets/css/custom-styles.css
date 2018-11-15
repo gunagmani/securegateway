@@ -1,0 +1,37 @@
+
+ 
+ /* User Custom Styles */
+ 
+ .jumbotron {
+    position: relative;
+    background: #f00 url("../images/dataprotection.jpg") center center;/*slide.jpg =>you image*/    
+    width: 100%;
+    height: 100%;
+	min-height: 600px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+#whysecuregateway{
+	background: #F00 !important;
+	min-height: 150px;	
+}
+
+#whysecuregateway-content{
+	background: #FFF !important;
+	min-height: 300px;	
+}
+
+#features{
+	background: #CCC !important;
+	min-height: 300px;	
+}
+
+#pricing{
+	background: #FFF !important;
+	min-height: 300px;	
+}
+footer{
+	border-top: 1px solid #A0262F;
+}

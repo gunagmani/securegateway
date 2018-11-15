@@ -1,0 +1,61 @@
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import {single, multi} from './data.ts';
+import { ApiService } from '../../shared/api-service';
+
+@Component({
+  selector: 'mani'; 		
+  templateUrl: './mani.component.html'
+})
+export class ManiComponent {
+single: any[];
+  multi: any[];
+
+  view: any[] = [700, 400];
+  view1: any[] = [500, 400];
+  view2: any[] = [450, 400];
+
+  // options
+  showXAxis = true;
+  showYAxis = true;
+  gradient = false;
+  showLegend = true;
+  showXAxisLabel = true;
+  xAxisLabel = 'Country';
+  showYAxisLabel = true;
+  yAxisLabel = 'Population';
+
+  colorScheme = {
+    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+  };
+
+  // line, area
+  autoScale = true;
+  
+  constructor() {
+    Object.assign(this, {single, multi})   
+  }
+  
+  onSelect(event) {
+    console.log(event);
+  }
+  
+  constructor()
+	  {
+		this.name="Mani Nalli";
+		this.name1="Manikandan Gunasekar";
+	  }
+	  
+	  
+	  
+	  
+	constructor(private apiService: ApiService)
+	{
+	
+	}
+
+  
+  
+
+  }
+
+}

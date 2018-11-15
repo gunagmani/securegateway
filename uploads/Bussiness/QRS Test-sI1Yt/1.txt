@@ -1,0 +1,137 @@
+ASN	United States AS26496 AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US (registered Oct 01, 2002)
+
+
+NMani19*(
+tFh8j6NoQJ8-jznbzRjJe2pIQS951WXlENMoJboDsF
+
+
+<?php
+  require 'textlocal.class.php';
+  $textlocal=new textlocal('me@textlocal.in','e215398a8820abd2c7a11a6cd5b1009d');
+  $textlocal->sendSms('917788990011','Your car - KA01 HG 9999 - is due for service on July 24th, please text SERVICE to 92205 92205 for a callback','FORDIN');
+?>
+
+
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\20101M>ping dms.qrsolutions.com.au
+
+Pinging  [] with 32 bytes of data:
+Request timed out.
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121775984-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-121775984-1');
+</script>
+
+$guestid=$this->uri->segment(5);  
+$this->uri->segment(6);
+
+ $this->session->set_userdata('typeofuser', 1);
+  $this->session->set_userdata('type_post', $type);
+
+if($this->session->userdata("otp")=='')
+					 {
+							$mail_send = $this->onetime_mail($email);
+					 }	
+5June1989!
+	
+9/
+
+media assets
+view OTP
+
+
+email_otp()
+elseif($this->session->userdata('type_post')==4)
+				{
+			     redirect('DashboardGuestUser');	
+
+
+
+				}
+
+
+public function guest_reg()
+        {
+	$guestid=$this->uri->segment(3);  
+	
+	 $where = array('id' => $guestid);
+				   $data['user_account'] = $this->Common_model->all_record('sg_file_share_nonreg',$where);	
+				   
+				   $id = $data['user_account'] -> id;	
+                   $email_id = $data['user_account'] -> email_id;
+                   $file_id = $data['user_account'] -> file_id;
+                   $email_status = $data['user_account'] -> email_status;
+                   $reg_status = $data['user_account'] -> reg_status;
+				    $this->session->set_userdata('file_id', $file_id);
+					   $this->session->set_userdata('email_post', $email_id);
+					   
+				   	 $where1 = array('username' => $email_id);
+				   $data['user'] = $this->Common_model->all_record('sg_user_auth',$where1);	
+				    
+					   
+				/*	   echo $guestid."  ".$this->session->userdata('email_post');
+	exit; */
+				   
+				   $counts = count($data['user']);
+			
+		if($counts==1)
+            {
+				redirect('Securegateway/view_login');
+				
+			}
+			else{
+				redirect('Securegateway/view_registration1');	
+			}
+                  echo   $id. " " . $email_id." ". $file_id." ". $email_status." ". $reg_status ;
+	echo $guestid;
+	exit;
+	
+		}
+
+$user_data = $this->session->all_userdata();
+		$user_data = $this->session->all_userdata();
+$this->session->sess_destroy();
+		redirect(base_url());
+
+
+public function view_registration1()
+	{
+		$this->load->view('login/signup-new');	
+	}
+	public function guestuser()
+	{
+			
+		if($this->session->userdata("otp")=='')
+					 {
+							$mail_send = $this->onetime_mail($this->session->userdata('email_post'));
+					 }	
+		  $this->session->set_userdata('type_post', 4);
+		  
+		  $this->load->view('login/email_otp');
+	}
+
+
+
+170319
+
+
+
+	
+
+
+
+
+
+
+
+
+
+

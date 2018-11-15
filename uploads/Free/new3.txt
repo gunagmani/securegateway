@@ -1,0 +1,101 @@
+a)   Account with Email:
+
+SELECT ID, Business_Email, First_Name, Email, SellingDealer, LastmodifiedDate, Home_Phone, Business_Name, SubscriberId, Type, Last_Name, AccountID, MobilePhone, Phone, Physical_Post_Code, SFID FROM ASGStagingTable WHERE ((((Email = 'viji@gmail.com') OR (Business_Email = 'viji@gmail.com')) AND (Type = 'Account')) AND (SellingDealer = 'Audi Five Dock'))
+
+     b)   Account with Mobile:
+
+SELECT ID, Business_Email, First_Name, Email, SellingDealer, LastmodifiedDate, Home_Phone, Business_Name, SubscriberId, Type, Last_Name, AccountID, MobilePhone, Phone, Physical_Post_Code, SFID FROM ASGStagingTable WHERE (((((MobilePhone = '02564892') OR (Phone = '02564892')) OR (Home_Phone = '')) AND (Type = ''Account'')) AND (SellingDealer = 'Audi Five Dock'))
+
+     c)   Contact with Email:
+
+SELECT ID, Business_Email, First_Name, Email, SellingDealer, LastmodifiedDate, Home_Phone, Business_Name, SubscriberId, Type, Last_Name, AccountID, MobilePhone, Phone, Physical_Post_Code, SFID FROM ASGStagingTable WHERE (((((Email = 'viji@gmail.com') OR (Business_Email = 'viji@gmail.com')) AND (Type = 'Contact')) AND (SellingDealer = 'Audi Five Dock')) AND (AccountID = '001p0000008oUhcAAE'))
+
+    d)   Contact with Mobile:
+
+SELECT ID, Business_Email, First_Name, Email, SellingDealer, LastmodifiedDate, Home_Phone, Business_Name, SubscriberId, Type, Last_Name, AccountID, MobilePhone, Phone, Physical_Post_Code, SFID FROM ASGStagingTable WHERE ((((((MobilePhone = '02564892') OR (Phone = '02564892')) OR (Home_Phone = '02564892')) AND (Type = 'Contact')) AND (SellingDealer = 'Audi Five Dock')) AND (AccountID = ''001p0000008oUhcAAE''))
+
+    e)   Lead with Email:
+
+SELECT ID, FirstName, Email, DealerName, LastmodifiedDate, SubscriberId, Type, LastName, MobilePhone, IsDeleted, Phone, PostalCode, BusinessPhone, LeadID FROM StagingLeads_Contact WHERE ((((Email = 'hellopark86@gmail.com') AND (DealerName = 'Prestige Auto Traders')) AND (Type = 'Lead')) AND (IsDeleted = 'false'))
+
+     f)   Lead with Mobile:
+
+SELECT ID, FirstName, Email, DealerName, LastmodifiedDate, SubscriberId, Type, LastName, MobilePhone, IsDeleted, Phone, PostalCode, BusinessPhone, LeadID FROM StagingLeads_Contact WHERE ((((((MobilePhone = '0413 519 487') OR (Phone = '0413 519 487')) OR (BusinessPhone = '0413 519 487')) AND (DealerName = 'Prestige Auto Traders')) AND (Type = 'Lead')) AND (IsDeleted = 'false'))
+
+{
+ "Identifier": "fdc58457-228d-41a7-882b-4af229713567845",
+ "ItemId": "OAG-AD-15262426",
+ "SellerIdentifier": "8bcf12d1-a115-6497-5f1e-62b898ef0a0d",
+ "Service": "CARSALES",
+ "LeadType": "123",
+ "RequestType": "DEALER",
+ "ItemType": "CAR",
+ "Status": "NEW",
+ "Assignment": {
+   "Email": "myles.thompson@prestigeautotraders.com.au",
+   "Name": "Myles Thompson",
+   "Assigned": "2017-10-20T18:58:20"
+ },
+ "Prospect": {
+   "FirstName": "Chris",
+   "LastName":"Sam",
+   "Email": "Sam@gmail.com",
+   "Postcode": "2251",
+   "HomePhone": "02564867",
+   "MobilePhone": "02564867"
+ },
+ "Subscription": {},
+ "TradeIn": {},
+ "Comments": "Please email phone number and address",
+ "Created": "2017-10-20T15:33:11",
+ "Modified": "2017-10-20T18:58:20.338",
+ "Tags": [
+   "PhotoTypeDealer",
+   "int-pegasus-ph1-control",
+   "Mobile",
+   "Billable"
+ ],
+ "Item": {
+   "Id": "OAG-AD-15262426",
+   "StockNumber": "P41554",
+   "Make": "BMW",
+   "Model": "X3",
+   "Badge": "xDrive30d",
+   "Series": "F25",
+   "Description": "2012 BMW X3 xDrive30d F25",
+   "Year": "2012",
+   "Price": "36800",
+   "RegistrationNumber": "CXD44D",
+   "Odometer": "83569 Kilometers"
+ },
+ "History": [
+   {
+     "Id": "328566487",
+     "Type": "FIRST_VIEW",
+     "Created": "2017-10-20T18:42:55",
+     "FirstName": "Peter",
+     "LastName": "Lead",
+     "UserName": "leads@autosportsgroup.com.au"
+   },
+   {
+     "Id": "328565374",
+     "Type": "ASSIGN",
+     "Created": "2017-10-20T15:33:21"
+   },
+   {
+     "Id": "328565373",
+     "Type": "CREATE",
+     "Created": "2017-10-20T15:33:11",
+     "Note": "Created new Enquiry"
+   }
+ ]
+}
+
+
+
+For tracking Input : devASG.ASG_LeadIntegration, 
+For tracking SF Response : devASG.StagingLeads_Contact, 
+For tracking metrics api response : QRSagRepository.data_volume,
+For tracking status : ASG_AuditLog.TRANSACTION_LOG,
+For tracking error msgs : ASG_AuditLog.ERROR_MESSAGE_LOG,
+To check whether the lead get created or updated : devASG.Lead_Master

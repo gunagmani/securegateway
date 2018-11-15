@@ -1,0 +1,2 @@
+Service Store|Cust#|business name|first name|last name|ADDRESS 1|City|State|Zip-Code|PRIVACY CODE|Bus Phone|Res Phone|UDF MOB PHONE|UDF BUS EMAIL|UDF RES EMAIL|Make|MODEL|TDM REGO NUMBER|Serial#|Mileage|Name of Driver|Driver_Phone|RO-NO|SF Close Date|Cust RO Total|ADDRESS 2|Salutation|Date|Time
+Audi Indooroopilly|370137||Douglas|Kelaher|26 Lonsdale Street|Lilyfield|NSW|2040|||0452460338|0452460338||douglaskelaheir@bigpond.com|VOLVO|V40 T3 Momentum 1.5L T/P 6Spd Auto 5Dr Hatch|579WZL|WVWZZZAUZHW168571|76356|||240890||0.00||Mr|08/04/2018|21:53
